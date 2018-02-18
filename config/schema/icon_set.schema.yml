@@ -1,0 +1,23 @@
+icon_set.icon_set.*:
+  type: config_entity
+  label: 'Icon set config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string
+    source:
+      type: string
+      label: 'Source'
+
+field.field_settings.icon:
+  type: mapping
+  label: 'Icon item settings'
+  mapping:
+    allowed_icon_sets:
+      type: sequence
+      label: 'Allowed icon sets'

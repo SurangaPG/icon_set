@@ -1,0 +1,18 @@
+
+# Icon set menu items definition
+entity.icon_set.collection:
+  title: 'Icon set'
+  route_name: entity.icon_set.collection
+  description: 'List Icon set (bundles)'
+  parent: system.admin_structure
+  weight: 99
+
+
+# Icon set menu items definition
+entity.icon_set.collection:
+  title: 'Icon set'
+  route_name: entity.icon_set.collection
+  description: 'List Icon set (bundles)'
+  parent: system.admin_structure
+  weight: 99
+

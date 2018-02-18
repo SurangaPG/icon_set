@@ -1,0 +1,12 @@
+entity.icon_set.add_form:
+  route_name: entity.icon_set.add_form
+  title: 'Add Icon set'
+  appears_on:
+    - entity.icon_set.collection
+
+entity.icon_set.add_form:
+  route_name: entity.icon_set.add_form
+  title: 'Add Icon set'
+  appears_on:
+    - entity.icon_set.collection
+

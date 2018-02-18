@@ -1,0 +1,6 @@
+name: Icon
+type: module
+description: 'Provides a base set of functionallity to implement icon sets into sites.'
+core: 8.x
+package : Generic
+dependencies:

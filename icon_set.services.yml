@@ -1,0 +1,8 @@
+services:
+  # Plugin managers
+  plugin.manager.icon_set.set:
+    class: Drupal\icon_set\IconSetPluginManager
+    arguments: ['@container.namespaces', '@cache.discovery', '@module_handler']
+  plugin.manager.icon_set.type:
+    class: Drupal\icon_set\IconSetTypePluginManager
+    arguments: ['@container.namespaces', '@cache.discovery', '@module_handler']

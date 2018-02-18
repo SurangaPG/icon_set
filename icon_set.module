@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * Contains the icon set module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function icon_set_theme($existing, $type, $theme, $path) {
+  return [
+    'icon_set_icon' => [
+      'variables' => [
+        'icon_set' => '',
+        'icon_name' => '',
+        'value' => '',
+      ],
+      'template' => 'icon-set-icon',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function icon_set_theme_suggestions_icon_set_icon(array $variables) {
+  return [
+    'icon_set_icon__' . $variables['icon_set'],
+  ];
+}
