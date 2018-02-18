@@ -1,0 +1,7 @@
+name: Icon Test
+type: module
+description: 'Test module for the icon set module. Provides a basic set.'
+core: 8.x
+package : Icons
+dependencies:
+  - icon_set

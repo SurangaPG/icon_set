@@ -32,7 +32,7 @@ class IconSelectWidget extends WidgetBase {
     // Currently we'll just add all the items to the options.
     // In time we might want to add support for the selection of certain
     // plugins based on a field setting.
-    foreach ($items->getSetting('allowed_icon_sets') as $pluginId) {
+    foreach (array_filter($items->getSetting('allowed_icon_sets')) as $pluginId) {
       /** @var \Drupal\icon_set\IconSetInterface $iconSetInstance */
       $iconSetInstance = $iconSetManager->createInstance($pluginId);
       $options += $iconSetInstance->generateFormOptions();

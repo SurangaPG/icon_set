@@ -51,6 +51,7 @@ class DynamicIconSetDeriver extends DeriverBase implements ContainerDeriverInter
     foreach ($components as $id => $componentInfo) {
       $this->derivatives[$id] = $base_plugin_definition;
       $this->derivatives[$id]['label'] = $componentInfo->label();
+      $this->derivatives[$id]['source'] = $componentInfo->getSource();
     }
     return parent::getDerivativeDefinitions($base_plugin_definition);
   }

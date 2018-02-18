@@ -25,4 +25,5 @@ interface IconSetInterface {
    */
   public function generateList();
 
+  public function getSource();
 }
